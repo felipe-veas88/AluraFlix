@@ -1,0 +1,244 @@
+/* Estilo del Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuir el espacio entre elementos */
+  background: black;
+  padding: 3em;
+  width: 100%;
+}
+
+.btn_home {
+  color: #191919;
+}
+
+.btn_nuevo_video {
+  background: #dc1a28;
+  color: white;
+}
+
+.btns,
+.btn_nuevo_video {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.btn_home,
+.btn_nuevo_video {
+  font-size: 1em;
+  padding: 20px;
+  margin-right: 2em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn_home:hover,
+.btn_nuevo_video:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Estilo del Body */
+body {
+  background: #191919;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.alura_challenge {
+  display: flex;
+}
+
+.challenge_texto {
+  margin-top: 1em;
+  margin-left: 12em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  width: 1000px;
+  text-justify: auto;
+}
+
+.btn_FRONTEND1,
+.btn_FRONTEND2,
+.btn_BACKEND,
+.btn_INNOVACION {
+  font-size: 3em;
+  padding: 0.5em;
+  color: #f5f5f5;
+  border-radius: 10px;
+  margin: 4px;
+  border-color: #f5f5f5;
+  margin-top: 5em;
+  margin-left: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.card {
+  margin: 2em;
+  border-radius: 10px;
+  background: black;
+  flex: 0 0 auto;
+  width: 560px;
+  margin-bottom: 2em;
+}
+
+.btn_FRONTEND1 {
+  background: #6bd1ff;
+  margin-left: 6em;
+}
+
+.btn_FRONTEND2 {
+  background: #6bd1ff;
+  margin-bottom: 1em;
+}
+
+.btn_BACKEND {
+  background: #00c86f;
+  margin-bottom: 1em;
+}
+
+.btn_INNOVACION {
+  background: #ffba05;
+  margin-bottom: 1em;
+}
+
+.btn_FRONTEND1:hover,
+.btn_FRONTEND2:hover,
+.btn_BACKEND:hover,
+.btn_INNOVACION:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.welcome_video {
+  margin-top: 8em;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-left: 6em;
+  font-size: 3em;
+}
+
+/* Estilo de Video Galeria */
+.video_galeria .card {
+  display: inline-block; /* Convertir las cards en elementos en línea */
+  margin: 0 2em; /* Agregar espacio entre las cards */
+  width: 700px; /* Ajustar el ancho de las cards */
+  border-radius: 10px; /* Mantener el borde redondeado */
+  background: black;
+}
+
+.icono_borrar,
+.icono_editar {
+  width: 3em;
+  border: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 150px;
+  transition: transform 0.3s;
+}
+
+.icono_borrar:hover,
+.icono_editar:hover {
+  transform: scale(1.1);
+}
+
+.frontend {
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .video_galeria .card {
+    width: calc(50% - 1em);
+  }
+}
+
+@media (max-width: 768px) {
+  .video_galeria .card {
+    width: 100%;
+  }
+}
+
+/* Estilo del Modal */
+/* Estilo del Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  color: black;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-content label,
+.modal-content input,
+.modal-content select,
+.modal-content textarea,
+.modal-content button {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#imageError {
+  color: red;
+  display: none;
+  text-align: center;
+}
+
+/* Estilo del Footer */
+footer {
+  background: black;
+  align-items: center;
+  padding: 3em;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 2em;
+}
+
+.footer_logo {
+  display: block;
+  margin: 2em auto; /* Margen de 2em y centrado automático */
+  width: 15%;
+}
